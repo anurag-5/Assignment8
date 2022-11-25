@@ -21,15 +21,16 @@
 </head>
 <body>
     <h4 align="center"><b>REGISTRATION FORM</b></h4>
-    <script type="text/javascript" src="FormValidation.js">
+    <script type="text/javascript" src="ValidateRegForm.js">
     </script>
     <form align="center" style="border:outset">
 
         <table align="center" >
-            <br />
+           
             <tr>
                 <td><b>User Id  :</b></td>
-                <td><input type="text" id="uid" /></td>
+                <td><input type="text" id="uid" /> <div class="error" id="uid1"></div></td>
+               
             </tr>
 
             <tr>
@@ -83,7 +84,7 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" onclick="return ValidateRegForm()" />
+                    <input type="submit" onclick="ValidateForm()" />
                 </td>
             </tr>
         </table>
